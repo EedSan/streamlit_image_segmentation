@@ -87,19 +87,21 @@ def create_models_faq_expander(mother_expander):
     models_expander.markdown(f"""This project uses the Tensorflow library to implement neural networks of the <font color="green">U-Net</font>, <font color="green">SegNet</font> and <font color="green">DeconvNet</font> architectures. 
     You can view the code of the implemented neural networks by selecting from the menu below""", unsafe_allow_html=1)
     print(os.listdir("../"))
-    with open('./models/unet_model.py', 'r') as file:
-        unet_code = file.read()
-    with open('../models/segnet_model.py', 'r') as file:
-        segnet_code = file.read()
-    with open('../src/models/deconvnet_model.py', 'r') as file:
-        deconvnet_code = file.read()
+    models_expander.write(os.listdir("../"))
+#     with open('./models/unet_model.py', 'r') as file:
+#         unet_code = file.read()
+#     with open('../models/segnet_model.py', 'r') as file:
+#         segnet_code = file.read()
+#     with open('../src/models/deconvnet_model.py', 'r') as file:
+#         deconvnet_code = file.read()
 
-    code_dict = {
-        "Hide Code": "#Code is hidden",
-        'U-Net': unet_code,
-        'SegNet': segnet_code,
-        'DeconvNet': deconvnet_code,
-    }
+#     code_dict = {
+#         "Hide Code": "#Code is hidden",
+#         'U-Net': unet_code,
+#         'SegNet': segnet_code,
+#         'DeconvNet': deconvnet_code,
+#     }
 
-    model_name_ = models_expander.selectbox('Select a model:', list(code_dict.keys()))
-    models_expander.code(code_dict[model_name_], language='python')
+#     model_name_ = models_expander.selectbox('Select a model:', list(code_dict.keys()))
+#     models_expander.code(code_dict[model_name_], language='python')
+     
