@@ -5,10 +5,10 @@ from image_processing import image_processing
 from predictions.predict_models import predict_model
 
 MODELS = {
-    # "U-Net": "../resources/models/unet/unet-19-epochs-weights.h5",
-    "U-Net": "../resources/models/unet/unet-11-epochs-weights.h5",
-    "SegNet": '../resources/models/segnet/segnet-29-epochs-weights.h5',
-    "DeconvNet": "../resources/models/deconvnet/deconvnet-16-epochs-weights.h5"
+    # "U-Net": "./resources/models/unet/unet-19-epochs-weights.h5",
+    "U-Net": "./resources/models/unet/unet-11-epochs-weights.h5",
+    "SegNet": './resources/models/segnet/segnet-29-epochs-weights.h5',
+    "DeconvNet": "./resources/models/deconvnet/deconvnet-16-epochs-weights.h5"
 }
 
 
