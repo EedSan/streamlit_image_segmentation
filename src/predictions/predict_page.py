@@ -1,3 +1,4 @@
+import os
 import streamlit as st
 from matplotlib import pyplot as plt
 
@@ -23,6 +24,7 @@ def predict_with_model_name(model_name_, data_):
 
 def predictions_page():
     st.markdown("""<h2><font color="#00FFFF"> Predict page </font> </h2>""", unsafe_allow_html=True)
+    st.write(os.listdir("./"))
     st.markdown(f"### Choose an image...")
     uploaded_file_ = st.file_uploader("1", type='tif', label_visibility='collapsed')
     if uploaded_file_ is not None:
