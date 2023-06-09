@@ -6,8 +6,8 @@ from image_processing import image_processing
 from predictions.predict_models import predict_model
 
 MODELS = {
-    # "U-Net": "./resources/models/unet/unet-19-epochs-weights.h5",
-    "U-Net": "./resources/models/unet/unet-11-epochs-weights.h5",
+    # "U-Net": "./resources/models/unet/unet-11-epochs-weights.h5",
+    "U-Net": "./resources/models/unet/unet-19-epochs-weights.h5",
     "SegNet": './resources/models/segnet/segnet-29-epochs-weights.h5',
     "DeconvNet": "./resources/models/deconvnet/deconvnet-16-epochs-weights.h5"
 }
@@ -24,7 +24,6 @@ def predict_with_model_name(model_name_, data_):
 
 def predictions_page():
     st.markdown("""<h2><font color="#00FFFF"> Predict page </font> </h2>""", unsafe_allow_html=True)
-    st.write(os.listdir("./"))
     st.markdown(f"### Choose an image...")
     uploaded_file_ = st.file_uploader("1", type='tif', label_visibility='collapsed')
     if uploaded_file_ is not None:
