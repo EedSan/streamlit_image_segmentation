@@ -86,7 +86,7 @@ def create_models_faq_expander(mother_expander):
     models_expander = mother_expander.expander(f"""#### About Models""")
     models_expander.markdown(f"""This project uses the Tensorflow library to implement neural networks of the <font color="green">U-Net</font>, <font color="green">SegNet</font> and <font color="green">DeconvNet</font> architectures. 
     You can view the code of the implemented neural networks by selecting from the menu below""", unsafe_allow_html=1)
-    print(os.listdir("./models"))
+    print(os.listdir("../"))
     with open('./models/unet_model.py', 'r') as file:
         unet_code = file.read()
     with open('../models/segnet_model.py', 'r') as file:
