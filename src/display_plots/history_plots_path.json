@@ -1,0 +1,19 @@
+{
+    "unet": {
+        "accuracy": "../resources/plots/unet2/accuracy.png",
+        "loss": "../resources/plots/unet2/loss.png",
+        "iou": "../resources/plots/unet2/binary_io_u.png",
+        "dice": "../resources/plots/unet2/dice_coef.png"
+    },
+    "segnet": {
+        "accuracy": "../resources/plots/segnet/accuracy.png",
+        "loss": "../resources/plots/segnet/loss.png",
+        "iou": "../resources/plots/segnet/binary_io_u.png",
+        "dice": "../resources/plots/segnet/dice_coef.png"
+    },
+    "deconvnet": {
+        "accuracy": "../resources/plots/deconvnet/accuracy.png",
+        "loss": "../resources/plots/deconvnet/loss.png",
+        "iou": "../resources/plots/deconvnet/binary_io_u.png",
+        "dice": "../resources/plots/deconvnet/dice_coef.png"
+    }}

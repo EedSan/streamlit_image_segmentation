@@ -1,0 +1,16 @@
+{
+  "data" : [
+  {
+  "image" : "../resources/image_data/images/LC08_L1TP_001067_20200812_20200812_01_RT_p00441.tif",
+  "mask" : "../resources/image_data/true_masks/LC08_L1TP_001067_20200812_20200812_01_RT_p00441.tif"
+  },
+  {
+  "image" : "../resources/image_data/images/LC08_L1TP_074090_20200811_20200812_01_RT_p00437.tif",
+  "mask" : "../resources/image_data/true_masks/LC08_L1TP_074090_20200811_20200812_01_RT_p00437.tif"
+  },
+  {
+  "image" : "../resources/image_data/images/LC08_L1TP_088082_20200829_20200830_01_RT_p00130.tif",
+  "mask" : "../resources/image_data/true_masks/LC08_L1TP_088082_20200829_20200830_01_RT_p00130.tif"
+  }
+]
+}

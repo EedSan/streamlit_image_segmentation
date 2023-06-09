@@ -1,0 +1,13 @@
+numpy~=1.24.0
+pandas~=1.4.4
+matplotlib~=3.6.2
+keras~=2.13.1rc0
+scikit-learn~=1.2.1
+rasterio~=1.3.7
+tensorflow~=2.13.0rc0
+streamlit~=1.22.0
+Pillow~=9.4.0
+cycler~=0.11.0
+streamlit-image-select==0.5.1
+scikit-image~=0.20.0
+streamlit_nested_layout~=0.1.1

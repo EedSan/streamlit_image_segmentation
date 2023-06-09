@@ -1,0 +1,6 @@
+{
+  "accuracy": "Some explanation for accuracy plot",
+  "dice": "Some explanation for dice plot",
+  "loss": "Some explanation for loss plot",
+  "iou": "Some explanation for mean_iou plot"
+    }
