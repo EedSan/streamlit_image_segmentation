@@ -14,11 +14,11 @@
   },
   {
   "image" : "./resources/image_data/images/LC08_L1TP_076091_20200809_20200810_01_RT_p00831.tif",
-  "mask" : "./resources/image_data/true_masks/LC08_L1TP_076091_20200809_20200810_01_RT_p00831.tif"
+  "mask" : "./resources/image_data/true_masks/LC08_L1TP_076091_20200809_20200810_01_RT_Schroeder_p00831.tif"
   },
   {
   "image" : "./resources/image_data/images/LC08_L1TP_106069_20200828_20200828_01_RT_p00705.tif",
-  "mask" : "./resources/image_data/true_masks/LC08_L1TP_106069_20200828_20200828_01_RT_p00705.tif"
+  "mask" : "./resources/image_data/true_masks/LC08_L1TP_106069_20200828_20200828_01_RT_Schroeder_p00705.tif"
   }
 ]
 }
