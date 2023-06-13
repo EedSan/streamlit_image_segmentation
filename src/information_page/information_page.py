@@ -31,21 +31,23 @@ def default_page():
 
     expander_results = st.expander(f"""#### _Results of experiments_ """)
     expander_results.markdown(
-        f"""The implemented networks demonstrate high performance on data from this dataset:
-        | foo | bar |
-        | --- | --- |
-        | baz | bim |
-        | highlight | highlight|
-        | baz | bim |
-        
+        f"""The implemented networks demonstrate high performance on data from this dataset: """)
+    table_md = """
         |Networks|Loss|Accuracy|IoU|Dice Coefficient|
         |:-------|:----|:------|:----|:-------------|
         |U-Net|1.60*10^-4|0.9999|0.9408|0.8582|
         |SegNet|9.5510^-4|0.9998|0.7488|0.6338|
-        |DeconvNet|0.0010|0.9996|0.6984|0.3451|        
-        """)
-    expander_results.table()
+        |DeconvNet|0.0010|0.9996|0.6984|0.3451|       
+    """)
+    expander_results.write("""
+        <style>
+        [data-testid="stMarkdownContainer"] tbody tr:nth-child(2n) {
+            background-color: rgba(255, 255,255, 0.1);
+        }
 
+        </style>
+        """, unsafe_allow_html=True)
+    
     expander_faq = st.expander(f"""#### _Frequently Asked Questions_ """)
 
     predict_page_usage_expander = expander_faq.expander(f"""#### About `Predict` page""")
