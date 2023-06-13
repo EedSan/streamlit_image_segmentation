@@ -31,7 +31,13 @@ def default_page():
 
     expander_results = st.expander(f"""#### _Results of experiments_ """)
     expander_results.markdown(
-        f"""The implemented networks demonstrate high performance on data from this dataset ...""")
+        f"""The implemented networks demonstrate high performance on data from this dataset:
+        |Networks|Loss|Accuracy|IoU|Dice Coefficient|
+        |:-------|:----|:------|:----|:-------------|
+        |U-Net|1.60*10^-4|0.9999|0.9408|0.8582|
+        |SegNet|9.5510^-4|0.9998|0.7488|0.6338|
+        |DeconvNet|0.0010|0.9996|0.6984|0.3451|        
+        """)
 
     expander_faq = st.expander(f"""#### _Frequently Asked Questions_ """)
 
