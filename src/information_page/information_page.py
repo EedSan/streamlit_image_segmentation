@@ -40,14 +40,6 @@ def default_page():
         |DeconvNet|0.0010|0.9996|0.6984|0.3451|       
     """
     expander_results.markdown(table_md)
-    expander_results.write("""
-        <style>
-        [data-testid="stMarkdownContainer"] tbody tr:nth-child(2n) {
-            background-color: rgba(255, 255,255, 0.1);
-        }
-
-        </style>
-        """, unsafe_allow_html=True)
     
     expander_faq = st.expander(f"""#### _Frequently Asked Questions_ """)
 
