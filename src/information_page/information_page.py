@@ -39,6 +39,7 @@ def default_page():
         |SegNet|9.5510^-4|0.9998|0.7488|0.6338|
         |DeconvNet|0.0010|0.9996|0.6984|0.3451|       
     """
+    expander_results.markdown(table_md)
     expander_results.write("""
         <style>
         [data-testid="stMarkdownContainer"] tbody tr:nth-child(2n) {
